@@ -20,7 +20,8 @@
     "eject": "react-scripts eject",
     "test:coverage": "cross-env CI=true npm test -- --env=jsdom --coverage",
     "upload:test-report": "./node_modules/.bin/codecov",
-    "netlify:deploy": "netlify deploy --dir=./build -p -m \"$(git log -1 --pretty=%B)\""
+    "netlify:deploy": "netlify deploy --dir=./build -p -m \"$(git log -1 --pretty=%B)\"",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
