@@ -18,7 +18,7 @@ describe("Todo List", () => {
     fireEvent.click(items[0].firstElementChild);
     expect(
       items[0].firstElementChild.classList.contains("todo-completed")
-    ).toBe(false);
+    ).toBe(true);
   });
   it("delete item", () => {
     const { getAllByTestId } = render(<ToDoList />);
